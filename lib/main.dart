@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:ticket_app/base/bottom_nav_bar.dart';
 
 void main() {
+
  runApp(const MyApp());
 }
 
@@ -14,17 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Second Lab',
       //mesti ada Scaffold kalau nak buat app kita colorful
-      home: Scaffold(
-        //body is what stays in the middle
-        body: Center(
-            child: Text("My Second Lab")
-        ),
-        //nak choose background color
-        appBar: AppBar(
-          title: Text('Second Lab'),
-          backgroundColor: Colors.blueGrey,
-        ),
-      )
+      home: BottomNavBar(),
     );
   }
 }
